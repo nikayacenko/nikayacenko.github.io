@@ -92,6 +92,9 @@ div.ns div.links{
 }
 div.ns div.t1{
     order:1;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
 }
 tr{
     background-color:rgba(8, 12, 249, 0.5);
@@ -122,6 +125,9 @@ label{
 }
 
 #kn{ padding-bottom: 20px;}
+#й{
+    width: 300px;
+}
 @font-face {
     font-family: "B";
     src: url("../font/Blackcraft.ttf") format("truetype");
@@ -191,9 +197,13 @@ label{
     }
     div.ns div.t1{
         order:2;
+        overflow: hidden;
     }
     footer{
         margin-top:15px;
+    }
+    #й{
+        width: 300px;
     }
 }
 
