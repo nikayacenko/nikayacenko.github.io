@@ -90,6 +90,9 @@ div.ns{
 div.ns div.links{
     order:2;
 }
+div.links ul li{
+    margin:10px;
+}
 div.ns div.t1{
     order:1;
     display: flex;
