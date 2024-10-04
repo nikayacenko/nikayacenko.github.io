@@ -1,4 +1,4 @@
-.name {padding:40px; text-align: left; font-size:25pt; font-family:B, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color:#128ee8; font-weight:normal}
+.name {padding:40px;text-align: left;font-size:25pt;font-family:B, Haettenschweiler, 'Arial Narrow Bold', sans-serif;color:#128ee8;font-weight:normal}
 #logo {float:left; margin:10px; width:100px; height:100px; border-radius: 100px;}
 
 body{
@@ -22,18 +22,10 @@ p{
 }
 header{
     background-color: #000000a7;
-    margin: auto;
-    /* width: 100%; */
 }
 nav{
-    /* width: 100%; */
     margin:0 auto;
     padding:10px;
-}
-nav ul{
-    padding:0%;
-    margin-top:10px;
-    margin-bottom:0px;
 }
 nav ul li{
     float : none;
@@ -48,23 +40,18 @@ nav ul li a{
     color:black;
     text-decoration: none;
     font-size: 18pt;
-    padding: 30px;
 }
 div.content
 {
-    
     border-radius: 10px;
-    margin:0 auto;
     font-family:'B';
     background-color: #1a1b228c;
 }
 h1{
     text-align: center;
-    padding: 10px;
     color: #128ee8;
 }
 h2{
-    padding-left: 20px;
     color: #128ee8;
     text-align: center;
 }
@@ -80,16 +67,7 @@ table {
     max-width: fit-content;
     color:aliceblue;
 }
-/* div.ns{
-    display:flex;
-    flex-direction:column;
-} */
-div.ns div.links{
-    order:2;
-}
-div.t1{
-    padding: 0;
-}
+
 table.tt{
     overflow: scroll;
     margin:0 auto;
@@ -114,12 +92,8 @@ tr.tb{
     background-color: #0b094f8a;
 }
 
-form{
-    padding-left: 20px;
-}
-
 label{
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     color: #128ee8;
 }
 
@@ -137,11 +111,6 @@ label{
 
 @media screen and (min-width: 800px)
 {
-    /*body{
-        display: flex;
-        flex-direction:column;
-    } 
-    */
     nav{
         position:absolute;
         top:0;
@@ -158,7 +127,6 @@ label{
     list-style: none;
     }
     nav ul{
-        width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -169,8 +137,6 @@ label{
     color:black;
     text-decoration: none;
     font-size: 17pt;
-        padding-top: 10px;
-        padding-bottom: 10px;
     }
     table.tt{
         overflow: hidden;
@@ -178,8 +144,6 @@ label{
     p.f{
         margin:0 auto;
     }
-    .links{order: 1;}
-    .t1{order:2;}
     div.content
     {
     border-radius: 10px;
@@ -193,7 +157,6 @@ label{
     margin-top:10px;
     }
     table {
-    padding: 5px;
     text-align: center;
     border-collapse: separate;
     border-spacing: 2px;
@@ -209,9 +172,6 @@ label{
     div.ns div.t1{
         order:2;
         overflow:auto;
-    }
-    footer{
-        margin-top:15px;
     }
     #й{
         width:300px;
