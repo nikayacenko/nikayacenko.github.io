@@ -4,7 +4,6 @@
 body{
     background-color:#128ee8;
     background-image: url(../image/корабль.jpg);
-    margin: 0%;
     background-attachment: fixed;
 }
 a {
@@ -23,10 +22,6 @@ p{
 header{
     background-color: #000000a7;
 }
-nav{
-    margin:0 auto;
-    padding:10px;
-}
 nav ul li{
     float : none;
     padding : 5px;
@@ -36,6 +31,12 @@ nav ul li{
     list-style: none;
 }
 nav ul li a{
+    font-family: 'B';
+    color:black;
+    text-decoration: none;
+    font-size: 18pt;
+}
+nav ul li buttom{
     font-family: 'B';
     color:black;
     text-decoration: none;
@@ -93,7 +94,6 @@ tr.tb{
 }
 
 label{
-    padding-bottom: 10px;
     color: #128ee8;
 }
 
@@ -120,7 +120,6 @@ label{
     }
     nav ul li{
     float: right;
-    padding : 5px;
     background-color: #128ee8;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
@@ -130,7 +129,6 @@ label{
         display: flex;
         flex-direction: row;
         justify-content: center;
-        margin-top:0px;
     }
     nav ul li a{
     font-family: 'B';
@@ -140,9 +138,6 @@ label{
     }
     table.tt{
         overflow: hidden;
-    }
-    p.f{
-        margin:0 auto;
     }
     div.content
     {
@@ -154,7 +149,6 @@ label{
     header{
     background-color: #000000a7;
     margin-bottom: 15px;
-    margin-top:10px;
     }
     table {
     text-align: center;
