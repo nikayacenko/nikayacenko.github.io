@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href = "styles/style.css" rel = "stylesheet">
+    <title>Калькулятор</title>
+    <script src="calculator.js" defer></script>
+</head>
+<body>
+    <form id = "contact" method="post">
+        <fieldset>
+        <p> Количество товара </p>
+        <input name="amount" type="text">
+        <select name="goods">
+            <option value="pumpkin mug">Кружка в виде тыквы - 259</option>
+            <option value="book">Книга - 450</option>
+            <option value="chokolate">Шоколад с орехами и изюмом - 55</option>
+            <option value="funchose">Фунчоза - 109</option>
+            <option value="tea">Чай с бергамотом - 94</option>
+        </select>
+        <button id="button1">OK</button>
+        <p> Стоимость: </p>
+        <div id="result"></div>
+        </fieldset>
+    </form>
+</body>
+</html>
