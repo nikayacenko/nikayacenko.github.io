@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор</title>
+    <script src="calculator.js" defer></script>
+    <link rel="stylesheet" href="static/styles/style.css">
+</head>
+<body>
+    <form id = "contact" method="post">
+        <fieldset>
+        <p> Количество товара </p>
+        <input name="amount" type="number">
+        <p>Тип товара</p>
+        <div class = "radios" id="radios">
+            <label><input type = "radio" name = "prodOptions" value = "p1" checked = "checked">Кружка в виде тыквы</label>
+            <label><input type = "radio" name = "prodOptions" value = "p2">Книга</label>
+            <label><input type = "radio" name = "prodOptions" value = "p3">Шоколад</label>
+        </div>        
+        <div id = "prodPrice"></div>
+        <select name="prodType" id = "sel">
+            <option value="1" name = "sel1">без доп опций</option>
+            <option value="2" name = "sel2">закладка с котиками</option>
+            <option value="3" name = "sel3">ручка</option>
+            <!-- <option value="funchose">Фунчоза - 109</option> -->
+            <!-- <option value="tea">Чай с бергамотом - 94</option> -->
+         </select>
+         <br>
+        <div id = "checkboxes">
+            <label><input type = "checkbox" name = "prop1">+ орехи</label>
+            <label><input type = "checkbox" name = "prop2">+ изюм</label>
+        </div>
+        </fieldset>
+    </form>
+    <!-- <button id="button1">OK</button> -->
+    <div id="result"></div>
+</body>
+</html>
