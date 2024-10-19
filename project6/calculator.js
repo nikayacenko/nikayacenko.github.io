@@ -5,11 +5,6 @@ function updatePrice() {
     let selectDiv = document.getElementById("sel");
     let check_var = 0;
     let select_var = 0;
-    document.querySelector('form').addEventListener('keypress', function(event){
-        if(event.key === 'Enter'){
-            event.preventDefault();
-        }
-    })
     let radios = document.getElementsByName("prodOptions");
     radios.forEach(function (radio) {
         if (radio.checked) {
@@ -38,7 +33,7 @@ function updatePrice() {
 
 
     let s = document.getElementsByName("prodType");
-    let select = s[0].value-1;
+    let select = s[0].value - 1;
     if (select !== undefined && select_var === 1) {
         price += prices.prodType[select];
     }
@@ -57,7 +52,7 @@ function updatePrice() {
 
     //подсчет цены с учетом количества товара
     let g_amount = document.getElementsByName("amount");
-    let m = g_amount[0].value.match(/^\d+$/);
+    let m = g_amount[0].value.match(/^[0-9]+$/);
     if (m !== null) {
         price *= m;
         res.innerHTML = "Итоговая стоимость: " + price;
@@ -71,14 +66,14 @@ function getPrices() {
         prodOptions: {
             p1: 159,
             p2: 89,
-            p3: 55,
+            p3: 55
         },
         prodProperties: {
             prop1: 10,
             prop2: 2,
             prop3: 3
         },
-        prodType: [0,5,7]
+        prodType: [0, 5, 7]
     };
 }
 
@@ -115,7 +110,6 @@ window.addEventListener("DOMContentLoaded", function () {
     });
 
     updatePrice();
-    
 });
 
 
