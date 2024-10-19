@@ -117,8 +117,5 @@ window.addEventListener("DOMContentLoaded", function () {
     updatePrice();
     
 });
- window.addEventListener("DOMContentLoaded", function () {
-     let b = document.getElementById("button1");
-     b.addEventListener("click", updatePrice);
-});
+
 
