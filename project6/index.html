@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,29 +11,29 @@
     <form id = "contact" method="post">
         <fieldset>
         <p> Количество товара </p>
-        <input name="amount" type="number">
+        <input name="amount" type="number" onkeydown="if(event.keyCode==13){return false;}">
+        <br>
         <p>Тип товара</p>
         <div class = "radios" id="radios">
             <label><input type = "radio" name = "prodOptions" value = "p1" checked = "checked">Кружка в виде тыквы</label>
             <label><input type = "radio" name = "prodOptions" value = "p2">Книга</label>
             <label><input type = "radio" name = "prodOptions" value = "p3">Шоколад</label>
-        </div>        
-        <div id = "prodPrice"></div>
+        </div>      
+        <br>  
         <select name="prodType" id = "sel">
-            <option value="1" name = "sel1">без доп опций</option>
-            <option value="2" name = "sel2">закладка с котиками</option>
-            <option value="3" name = "sel3">ручка</option>
-            <!-- <option value="funchose">Фунчоза - 109</option> -->
-            <!-- <option value="tea">Чай с бергамотом - 94</option> -->
+            <option value="1">без дополнительных опций</option>
+            <option value="2">закладка с котиками</option>
+            <option value="3">ручка</option>
          </select>
          <br>
         <div id = "checkboxes">
             <label><input type = "checkbox" name = "prop1">+ орехи</label>
             <label><input type = "checkbox" name = "prop2">+ изюм</label>
+            <label><input type = "checkbox" name = "prop3">+ вафельная крошка</label>
         </div>
+        <br>
         </fieldset>
     </form>
-    <!-- <button id="button1">OK</button> -->
     <div id="result"></div>
 </body>
 </html>
