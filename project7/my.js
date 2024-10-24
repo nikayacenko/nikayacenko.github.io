@@ -1,15 +1,16 @@
-$(document).ready(function(){
+/*node browser: true */ /*global $ */
+$(document).ready(function () {
     $(".slider").slick({
-        dots:true,
+        dots: true,
         infinite: true,
-        responsive:[{
+        responsive: [{
             breakpoint: 900,
             settings: {
-                dots:true,
+                dots: true,
                 infinite: true,
                 slidesToScroll: 1,
                 slidesToShow: 1
-                }
+            }
         }],
         slidesToScroll: 1,
         slidesToShow: 3
