@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="style.css">
+    <script src="my.js"></script>
+    <title>form</title>
+</head>
+<body>
+    <div id="overlay"></div>
+    <button id="open-form">Форма</button>
+    <div id="popup" class="popup">
+    <form id="MyForm"
+    class="formcarryForm"
+    action="https://formcarry.com/s/UKD76Lz9dMN"
+    enctype="multipart/form-data"
+    method="POST"
+    >
+        <label>
+            ФИО:<br />
+            <input name="FIO" />
+        </label><br />
+        <label>
+            Номер телефона: <br>
+            <input name="field-number" type="tel">
+        </label> <br>
+        <label>
+            Введите email:<br />
+            <input name="field-email"
+            type="email">
+        </label><br />
+        <label>
+            Организация:<br />
+            <input name="field-company">
+        </label><br />
+        <label>
+            Многострочное текстовое поле:<br />
+            <textarea name="field-message">Сообщение</textarea>
+        </label><br />
+        <label><input type="checkbox"
+        name="check-1" />
+        Согласие на обработку персональных данных</label><br />
+        <input name="send" type="submit" value="Отправить"> 
+    </form>
+    </div> 
+</body>
+
+</html>
+

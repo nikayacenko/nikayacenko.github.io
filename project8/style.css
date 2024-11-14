@@ -1,0 +1,56 @@
+html{
+    background-color: #aea8ff;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ceb7d094;
+    z-index: 9998;
+    display: none;
+  }
+  
+  #overlay.show {
+    display: block;
+  }
+
+#popup {
+    max-height: 100vh;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 50px;
+    background: linear-gradient(
+        1307.09deg,
+        #91a7ff 1.19%,
+        #fc9bc4 30.57%,
+        #5b51f3fd 90.86%
+    );
+    box-shadow: 0 0 20px rgba(68, 43, 91, 0.2);
+    z-index: 9999;
+    display: none;
+}
+form{
+    max-height: fit-content;
+    text-align: center;
+}
+form label{
+    margin: 2vh;
+}
+form input, form select, form option, select, button{
+    border-radius: 15px;
+    margin: 2vh;
+}
+form, form input, form option, select{
+    font-size: 16pt;
+}
+form h2, form, form input, form option, select, button, textarea{
+    font-family: "Mac";
+    letter-spacing: 1px;
+    color: #1b1813;
+}
